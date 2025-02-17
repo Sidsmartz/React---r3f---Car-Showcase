@@ -16,8 +16,6 @@ export function Ground() {
       texture.wrapT = RepeatWrapping;
       texture.repeat.set(5, 5);
     });
-
-    normal.encoding = THREE.LinearEncoding;
   }, [normal, roughness]);
 
   return (
@@ -29,7 +27,7 @@ export function Ground() {
         roughnessMap={roughness}
         dithering={true}
         color={[0.015, 0.015, 0.015]}
-        roughness={0.6}
+        roughness={.4}
         blur={[1000, 300]}
         mixBlur={30}
         mixStrength={80}
